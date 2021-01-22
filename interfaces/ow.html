@@ -1,0 +1,1327 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Ow | ow</title>
+	<meta name="description" content="Documentation for ow">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">ow</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../modules.html">ow</a>
+				</li>
+				<li>
+					<a href="ow.html">Ow</a>
+				</li>
+			</ul>
+			<h1>Interface Ow</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="tsd-signature-type">Modifiers</span>
+					</li>
+					<li>
+						<span class="tsd-signature-type">Predicates</span>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">Ow</span>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel">
+				<h3 class="tsd-before-signature">Callable</h3>
+				<ul class="tsd-signatures tsd-kind-interface tsd-has-type-parameter">
+					<li class="tsd-signature tsd-kind-icon">Ow&lt;T&gt;<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">unknown</span>, predicate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">asserts </span><span class="tsd-signature-type">value</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">T</span></li>
+					<li class="tsd-signature tsd-kind-icon">Ow&lt;T&gt;<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">unknown</span>, label<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, predicate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">asserts </span><span class="tsd-signature-type">value</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">T</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/sindresorhus/ow/blob/7798207/source/index.ts#L29">source/index.ts:29</a></li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Test if the value matches the predicate. Throws an <code>ArgumentError</code> if the test fails.</p>
+							</div>
+						</div>
+						<h4 class="tsd-type-parameters-title">Type parameters</h4>
+						<ul class="tsd-type-parameters">
+							<li>
+								<h4>T</h4>
+							</li>
+						</ul>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>value: <span class="tsd-signature-type">unknown</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>Value to test.</p>
+								</div>
+							</li>
+							<li>
+								<h5>predicate: <span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>Predicate to test against.</p>
+								</div>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">asserts </span><span class="tsd-signature-type">value</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">T</span></h4>
+					</li>
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/sindresorhus/ow/blob/7798207/source/index.ts#L37">source/index.ts:37</a></li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Test if <code>value</code> matches the provided <code>predicate</code>. Throws an <code>ArgumentError</code> with the specified <code>label</code> if the test fails.</p>
+							</div>
+						</div>
+						<h4 class="tsd-type-parameters-title">Type parameters</h4>
+						<ul class="tsd-type-parameters">
+							<li>
+								<h4>T</h4>
+							</li>
+						</ul>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>value: <span class="tsd-signature-type">unknown</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>Value to test.</p>
+								</div>
+							</li>
+							<li>
+								<h5>label: <span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>Label which should be used in error messages.</p>
+								</div>
+							</li>
+							<li>
+								<h5>predicate: <span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>Predicate to test against.</p>
+								</div>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">asserts </span><span class="tsd-signature-type">value</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">T</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ow.html#any" class="tsd-kind-icon">any</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ow.html#array" class="tsd-kind-icon">array</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ow.html#arraybuffer" class="tsd-kind-icon">array<wbr>Buffer</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ow.html#boolean" class="tsd-kind-icon">boolean</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ow.html#buffer" class="tsd-kind-icon">buffer</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ow.html#create" class="tsd-kind-icon">create</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ow.html#dataview" class="tsd-kind-icon">data<wbr>View</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ow.html#date" class="tsd-kind-icon">date</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ow.html#error" class="tsd-kind-icon">error</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ow.html#float32array" class="tsd-kind-icon">float32<wbr>Array</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ow.html#float64array" class="tsd-kind-icon">float64<wbr>Array</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ow.html#function" class="tsd-kind-icon">function</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ow.html#int16array" class="tsd-kind-icon">int16<wbr>Array</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ow.html#int32array" class="tsd-kind-icon">int32<wbr>Array</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ow.html#int8array" class="tsd-kind-icon">int8<wbr>Array</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ow.html#isvalid" class="tsd-kind-icon">is<wbr>Valid</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ow.html#iterable" class="tsd-kind-icon">iterable</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ow.html#map" class="tsd-kind-icon">map</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ow.html#nan" class="tsd-kind-icon">nan</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ow.html#null" class="tsd-kind-icon">null</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ow.html#nullorundefined" class="tsd-kind-icon">null<wbr>OrUndefined</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ow.html#number" class="tsd-kind-icon">number</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ow.html#object" class="tsd-kind-icon">object</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ow.html#optional" class="tsd-kind-icon">optional</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ow.html#promise-1" class="tsd-kind-icon">promise</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ow.html#regexp-1" class="tsd-kind-icon">reg<wbr>Exp</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ow.html#set-1" class="tsd-kind-icon">set</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ow.html#sharedarraybuffer-1" class="tsd-kind-icon">shared<wbr>Array<wbr>Buffer</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ow.html#string-1" class="tsd-kind-icon">string</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ow.html#symbol-1" class="tsd-kind-icon">symbol</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ow.html#typedarray-1" class="tsd-kind-icon">typed<wbr>Array</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ow.html#uint16array-1" class="tsd-kind-icon">uint16<wbr>Array</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ow.html#uint32array-1" class="tsd-kind-icon">uint32<wbr>Array</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ow.html#uint8array-1" class="tsd-kind-icon">uint8<wbr>Array</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ow.html#uint8clampedarray-1" class="tsd-kind-icon">uint8<wbr>Clamped<wbr>Array</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ow.html#undefined-1" class="tsd-kind-icon">undefined</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ow.html#weakmap-1" class="tsd-kind-icon">weak<wbr>Map</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ow.html#weakset-1" class="tsd-kind-icon">weak<wbr>Set</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="any" class="tsd-anchor"></a>
+					<h3>any</h3>
+					<div class="tsd-signature tsd-kind-icon">any<span class="tsd-signature-symbol">:</span> &lt;T1&gt;<span class="tsd-signature-symbol">(</span>p1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T1</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">AnyPredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T1</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span>&lt;T1, T2&gt;<span class="tsd-signature-symbol">(</span>p1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T1</span><span class="tsd-signature-symbol">&gt;</span>, p2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T2</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">AnyPredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T2</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span>&lt;T1, T2, T3&gt;<span class="tsd-signature-symbol">(</span>p1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T1</span><span class="tsd-signature-symbol">&gt;</span>, p2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T2</span><span class="tsd-signature-symbol">&gt;</span>, p3<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T3</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">AnyPredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T2</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T3</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span>&lt;T1, T2, T3, T4&gt;<span class="tsd-signature-symbol">(</span>p1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T1</span><span class="tsd-signature-symbol">&gt;</span>, p2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T2</span><span class="tsd-signature-symbol">&gt;</span>, p3<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T3</span><span class="tsd-signature-symbol">&gt;</span>, p4<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T4</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">AnyPredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T2</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T3</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T4</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span>&lt;T1, T2, T3, T4, T5&gt;<span class="tsd-signature-symbol">(</span>p1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T1</span><span class="tsd-signature-symbol">&gt;</span>, p2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T2</span><span class="tsd-signature-symbol">&gt;</span>, p3<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T3</span><span class="tsd-signature-symbol">&gt;</span>, p4<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T4</span><span class="tsd-signature-symbol">&gt;</span>, p5<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T5</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">AnyPredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T2</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T3</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T4</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T5</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span>&lt;T1, T2, T3, T4, T5, T6&gt;<span class="tsd-signature-symbol">(</span>p1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T1</span><span class="tsd-signature-symbol">&gt;</span>, p2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T2</span><span class="tsd-signature-symbol">&gt;</span>, p3<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T3</span><span class="tsd-signature-symbol">&gt;</span>, p4<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T4</span><span class="tsd-signature-symbol">&gt;</span>, p5<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T5</span><span class="tsd-signature-symbol">&gt;</span>, p6<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T6</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">AnyPredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T2</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T3</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T4</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T5</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T6</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span>&lt;T1, T2, T3, T4, T5, T6, T7&gt;<span class="tsd-signature-symbol">(</span>p1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T1</span><span class="tsd-signature-symbol">&gt;</span>, p2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T2</span><span class="tsd-signature-symbol">&gt;</span>, p3<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T3</span><span class="tsd-signature-symbol">&gt;</span>, p4<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T4</span><span class="tsd-signature-symbol">&gt;</span>, p5<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T5</span><span class="tsd-signature-symbol">&gt;</span>, p6<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T6</span><span class="tsd-signature-symbol">&gt;</span>, p7<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T7</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">AnyPredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T2</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T3</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T4</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T5</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T6</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T7</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span>&lt;T1, T2, T3, T4, T5, T6, T7, T8&gt;<span class="tsd-signature-symbol">(</span>p1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T1</span><span class="tsd-signature-symbol">&gt;</span>, p2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T2</span><span class="tsd-signature-symbol">&gt;</span>, p3<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T3</span><span class="tsd-signature-symbol">&gt;</span>, p4<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T4</span><span class="tsd-signature-symbol">&gt;</span>, p5<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T5</span><span class="tsd-signature-symbol">&gt;</span>, p6<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T6</span><span class="tsd-signature-symbol">&gt;</span>, p7<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T7</span><span class="tsd-signature-symbol">&gt;</span>, p8<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T8</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">AnyPredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T2</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T3</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T4</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T5</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T6</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T7</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T8</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span>&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9&gt;<span class="tsd-signature-symbol">(</span>p1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T1</span><span class="tsd-signature-symbol">&gt;</span>, p2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T2</span><span class="tsd-signature-symbol">&gt;</span>, p3<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T3</span><span class="tsd-signature-symbol">&gt;</span>, p4<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T4</span><span class="tsd-signature-symbol">&gt;</span>, p5<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T5</span><span class="tsd-signature-symbol">&gt;</span>, p6<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T6</span><span class="tsd-signature-symbol">&gt;</span>, p7<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T7</span><span class="tsd-signature-symbol">&gt;</span>, p8<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T8</span><span class="tsd-signature-symbol">&gt;</span>, p9<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T9</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">AnyPredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T2</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T3</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T4</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T5</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T6</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T7</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T8</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T9</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span>&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10&gt;<span class="tsd-signature-symbol">(</span>p1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T1</span><span class="tsd-signature-symbol">&gt;</span>, p2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T2</span><span class="tsd-signature-symbol">&gt;</span>, p3<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T3</span><span class="tsd-signature-symbol">&gt;</span>, p4<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T4</span><span class="tsd-signature-symbol">&gt;</span>, p5<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T5</span><span class="tsd-signature-symbol">&gt;</span>, p6<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T6</span><span class="tsd-signature-symbol">&gt;</span>, p7<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T7</span><span class="tsd-signature-symbol">&gt;</span>, p8<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T8</span><span class="tsd-signature-symbol">&gt;</span>, p9<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T9</span><span class="tsd-signature-symbol">&gt;</span>, p10<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T10</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">AnyPredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T2</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T3</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T4</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T5</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T6</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T7</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T8</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T9</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T10</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>predicate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">AnyPredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sindresorhus/ow/blob/7798207/source/predicates.ts#L194">source/predicates.ts:194</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Test that the value matches at least one of the given predicates.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="array" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> array</h3>
+					<div class="tsd-signature tsd-kind-icon">array<span class="tsd-signature-symbol">:</span> <a href="../classes/arraypredicate.html" class="tsd-signature-type" data-tsd-kind="Class">ArrayPredicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sindresorhus/ow/blob/7798207/source/predicates.ts#L64">source/predicates.ts:64</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Test the value to be an array.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="arraybuffer" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> array<wbr>Buffer</h3>
+					<div class="tsd-signature tsd-kind-icon">array<wbr>Buffer<span class="tsd-signature-symbol">:</span> <a href="../classes/arraybufferpredicate.html" class="tsd-signature-type" data-tsd-kind="Class">ArrayBufferPredicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ArrayBuffer</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sindresorhus/ow/blob/7798207/source/predicates.ts#L174">source/predicates.ts:174</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Test the value to be a ArrayBuffer.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="boolean" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> boolean</h3>
+					<div class="tsd-signature tsd-kind-icon">boolean<span class="tsd-signature-symbol">:</span> <a href="../classes/booleanpredicate.html" class="tsd-signature-type" data-tsd-kind="Class">BooleanPredicate</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sindresorhus/ow/blob/7798207/source/predicates.ts#L34">source/predicates.ts:34</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Test the value to be a boolean.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="buffer" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> buffer</h3>
+					<div class="tsd-signature tsd-kind-icon">buffer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Predicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sindresorhus/ow/blob/7798207/source/predicates.ts#L109">source/predicates.ts:109</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Test the value to be a Buffer.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="create" class="tsd-anchor"></a>
+					<h3>create</h3>
+					<div class="tsd-signature tsd-kind-icon">create<span class="tsd-signature-symbol">:</span> &lt;T&gt;<span class="tsd-signature-symbol">(</span>predicate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="reusablevalidator.html" class="tsd-signature-type" data-tsd-kind="Interface">ReusableValidator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span>&lt;T&gt;<span class="tsd-signature-symbol">(</span>label<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, predicate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="reusablevalidator.html" class="tsd-signature-type" data-tsd-kind="Interface">ReusableValidator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sindresorhus/ow/blob/7798207/source/index.ts#L29">source/index.ts:29</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Create a reusable validator.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>param</dt>
+							<dd><p>Predicate used in the validator function.</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="dataview" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> data<wbr>View</h3>
+					<div class="tsd-signature tsd-kind-icon">data<wbr>View<span class="tsd-signature-symbol">:</span> <a href="../classes/dataviewpredicate.html" class="tsd-signature-type" data-tsd-kind="Class">DataViewPredicate</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sindresorhus/ow/blob/7798207/source/predicates.ts#L184">source/predicates.ts:184</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Test the value to be a DataView.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="date" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> date</h3>
+					<div class="tsd-signature tsd-kind-icon">date<span class="tsd-signature-symbol">:</span> <a href="../classes/datepredicate.html" class="tsd-signature-type" data-tsd-kind="Class">DatePredicate</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sindresorhus/ow/blob/7798207/source/predicates.ts#L74">source/predicates.ts:74</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Test the value to be a Date.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="error" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> error</h3>
+					<div class="tsd-signature tsd-kind-icon">error<span class="tsd-signature-symbol">:</span> <a href="../classes/errorpredicate.html" class="tsd-signature-type" data-tsd-kind="Class">ErrorPredicate</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sindresorhus/ow/blob/7798207/source/predicates.ts#L79">source/predicates.ts:79</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Test the value to be an Error.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="float32array" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> float32<wbr>Array</h3>
+					<div class="tsd-signature tsd-kind-icon">float32<wbr>Array<span class="tsd-signature-symbol">:</span> <a href="../classes/typedarraypredicate.html" class="tsd-signature-type" data-tsd-kind="Class">TypedArrayPredicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Float32Array</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sindresorhus/ow/blob/7798207/source/predicates.ts#L164">source/predicates.ts:164</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Test the value to be a Float32Array.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="float64array" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> float64<wbr>Array</h3>
+					<div class="tsd-signature tsd-kind-icon">float64<wbr>Array<span class="tsd-signature-symbol">:</span> <a href="../classes/typedarraypredicate.html" class="tsd-signature-type" data-tsd-kind="Class">TypedArrayPredicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Float64Array</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sindresorhus/ow/blob/7798207/source/predicates.ts#L169">source/predicates.ts:169</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Test the value to be a Float64Array.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="function" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> function</h3>
+					<div class="tsd-signature tsd-kind-icon">function<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Predicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Function</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sindresorhus/ow/blob/7798207/source/predicates.ts#L104">source/predicates.ts:104</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Test the value to be a Function.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="int16array" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> int16<wbr>Array</h3>
+					<div class="tsd-signature tsd-kind-icon">int16<wbr>Array<span class="tsd-signature-symbol">:</span> <a href="../classes/typedarraypredicate.html" class="tsd-signature-type" data-tsd-kind="Class">TypedArrayPredicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Int16Array</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sindresorhus/ow/blob/7798207/source/predicates.ts#L144">source/predicates.ts:144</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Test the value to be a Int16Array.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="int32array" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> int32<wbr>Array</h3>
+					<div class="tsd-signature tsd-kind-icon">int32<wbr>Array<span class="tsd-signature-symbol">:</span> <a href="../classes/typedarraypredicate.html" class="tsd-signature-type" data-tsd-kind="Class">TypedArrayPredicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Int32Array</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sindresorhus/ow/blob/7798207/source/predicates.ts#L154">source/predicates.ts:154</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Test the value to be a Int32Array.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="int8array" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> int8<wbr>Array</h3>
+					<div class="tsd-signature tsd-kind-icon">int8<wbr>Array<span class="tsd-signature-symbol">:</span> <a href="../classes/typedarraypredicate.html" class="tsd-signature-type" data-tsd-kind="Class">TypedArrayPredicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Int8Array</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sindresorhus/ow/blob/7798207/source/predicates.ts#L129">source/predicates.ts:129</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Test the value to be a Int8Array.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="isvalid" class="tsd-anchor"></a>
+					<h3>is<wbr>Valid</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Valid<span class="tsd-signature-symbol">:</span> &lt;T&gt;<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, predicate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">value</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">T</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sindresorhus/ow/blob/7798207/source/index.ts#L22">source/index.ts:22</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Returns <code>true</code> if the value matches the predicate, otherwise returns <code>false</code>.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>param</dt>
+							<dd><p>Value to test.</p>
+							</dd>
+							<dt>param</dt>
+							<dd><p>Predicate to test against.</p>
+							</dd>
+						</dl>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-interface tsd-has-type-parameter">
+									<li class="tsd-signature tsd-kind-icon">&lt;T&gt;<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, predicate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">value</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">T</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-type-parameters-title">Type parameters</h4>
+										<ul class="tsd-type-parameters">
+											<li>
+												<h4>T</h4>
+											</li>
+										</ul>
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>value: <span class="tsd-signature-type">T</span></h5>
+											</li>
+											<li>
+												<h5>predicate: <span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">value</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">T</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="iterable" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> iterable</h3>
+					<div class="tsd-signature tsd-kind-icon">iterable<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Predicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Iterable</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sindresorhus/ow/blob/7798207/source/predicates.ts#L189">source/predicates.ts:189</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Test the value to be Iterable.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="map" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> map</h3>
+					<div class="tsd-signature tsd-kind-icon">map<span class="tsd-signature-symbol">:</span> <a href="../classes/mappredicate.html" class="tsd-signature-type" data-tsd-kind="Class">MapPredicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sindresorhus/ow/blob/7798207/source/predicates.ts#L84">source/predicates.ts:84</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Test the value to be a Map.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="nan" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> nan</h3>
+					<div class="tsd-signature tsd-kind-icon">nan<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Predicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sindresorhus/ow/blob/7798207/source/predicates.ts#L54">source/predicates.ts:54</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Test the value to be not a number.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="null" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> null</h3>
+					<div class="tsd-signature tsd-kind-icon">null<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Predicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sindresorhus/ow/blob/7798207/source/predicates.ts#L44">source/predicates.ts:44</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Test the value to be null.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="nullorundefined" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> null<wbr>OrUndefined</h3>
+					<div class="tsd-signature tsd-kind-icon">null<wbr>OrUndefined<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Predicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sindresorhus/ow/blob/7798207/source/predicates.ts#L49">source/predicates.ts:49</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Test the value to be null or undefined.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="number" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> number</h3>
+					<div class="tsd-signature tsd-kind-icon">number<span class="tsd-signature-symbol">:</span> <a href="../classes/numberpredicate.html" class="tsd-signature-type" data-tsd-kind="Class">NumberPredicate</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sindresorhus/ow/blob/7798207/source/predicates.ts#L29">source/predicates.ts:29</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Test the value to be a number.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="object" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> object</h3>
+					<div class="tsd-signature tsd-kind-icon">object<span class="tsd-signature-symbol">:</span> <a href="../classes/objectpredicate.html" class="tsd-signature-type" data-tsd-kind="Class">ObjectPredicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sindresorhus/ow/blob/7798207/source/predicates.ts#L69">source/predicates.ts:69</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Test the value to be an object.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="optional" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> optional</h3>
+					<div class="tsd-signature tsd-kind-icon">optional<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>any<span class="tsd-signature-symbol">: </span>&lt;T1&gt;<span class="tsd-signature-symbol">(</span>p1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T1</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">AnyPredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T1</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span>&lt;T1, T2&gt;<span class="tsd-signature-symbol">(</span>p1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T1</span><span class="tsd-signature-symbol">&gt;</span>, p2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T2</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">AnyPredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T2</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span>&lt;T1, T2, T3&gt;<span class="tsd-signature-symbol">(</span>p1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T1</span><span class="tsd-signature-symbol">&gt;</span>, p2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T2</span><span class="tsd-signature-symbol">&gt;</span>, p3<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T3</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">AnyPredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T2</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T3</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span>&lt;T1, T2, T3, T4&gt;<span class="tsd-signature-symbol">(</span>p1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T1</span><span class="tsd-signature-symbol">&gt;</span>, p2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T2</span><span class="tsd-signature-symbol">&gt;</span>, p3<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T3</span><span class="tsd-signature-symbol">&gt;</span>, p4<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T4</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">AnyPredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T2</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T3</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T4</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span>&lt;T1, T2, T3, T4, T5&gt;<span class="tsd-signature-symbol">(</span>p1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T1</span><span class="tsd-signature-symbol">&gt;</span>, p2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T2</span><span class="tsd-signature-symbol">&gt;</span>, p3<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T3</span><span class="tsd-signature-symbol">&gt;</span>, p4<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T4</span><span class="tsd-signature-symbol">&gt;</span>, p5<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T5</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">AnyPredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T2</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T3</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T4</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T5</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span>&lt;T1, T2, T3, T4, T5, T6&gt;<span class="tsd-signature-symbol">(</span>p1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T1</span><span class="tsd-signature-symbol">&gt;</span>, p2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T2</span><span class="tsd-signature-symbol">&gt;</span>, p3<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T3</span><span class="tsd-signature-symbol">&gt;</span>, p4<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T4</span><span class="tsd-signature-symbol">&gt;</span>, p5<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T5</span><span class="tsd-signature-symbol">&gt;</span>, p6<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T6</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">AnyPredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T2</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T3</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T4</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T5</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T6</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span>&lt;T1, T2, T3, T4, T5, T6, T7&gt;<span class="tsd-signature-symbol">(</span>p1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T1</span><span class="tsd-signature-symbol">&gt;</span>, p2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T2</span><span class="tsd-signature-symbol">&gt;</span>, p3<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T3</span><span class="tsd-signature-symbol">&gt;</span>, p4<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T4</span><span class="tsd-signature-symbol">&gt;</span>, p5<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T5</span><span class="tsd-signature-symbol">&gt;</span>, p6<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T6</span><span class="tsd-signature-symbol">&gt;</span>, p7<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T7</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">AnyPredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T2</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T3</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T4</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T5</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T6</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T7</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span>&lt;T1, T2, T3, T4, T5, T6, T7, T8&gt;<span class="tsd-signature-symbol">(</span>p1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T1</span><span class="tsd-signature-symbol">&gt;</span>, p2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T2</span><span class="tsd-signature-symbol">&gt;</span>, p3<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T3</span><span class="tsd-signature-symbol">&gt;</span>, p4<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T4</span><span class="tsd-signature-symbol">&gt;</span>, p5<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T5</span><span class="tsd-signature-symbol">&gt;</span>, p6<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T6</span><span class="tsd-signature-symbol">&gt;</span>, p7<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T7</span><span class="tsd-signature-symbol">&gt;</span>, p8<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T8</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">AnyPredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T2</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T3</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T4</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T5</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T6</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T7</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T8</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span>&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9&gt;<span class="tsd-signature-symbol">(</span>p1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T1</span><span class="tsd-signature-symbol">&gt;</span>, p2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T2</span><span class="tsd-signature-symbol">&gt;</span>, p3<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T3</span><span class="tsd-signature-symbol">&gt;</span>, p4<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T4</span><span class="tsd-signature-symbol">&gt;</span>, p5<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T5</span><span class="tsd-signature-symbol">&gt;</span>, p6<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T6</span><span class="tsd-signature-symbol">&gt;</span>, p7<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T7</span><span class="tsd-signature-symbol">&gt;</span>, p8<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T8</span><span class="tsd-signature-symbol">&gt;</span>, p9<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T9</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">AnyPredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T2</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T3</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T4</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T5</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T6</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T7</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T8</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T9</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span>&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10&gt;<span class="tsd-signature-symbol">(</span>p1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T1</span><span class="tsd-signature-symbol">&gt;</span>, p2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T2</span><span class="tsd-signature-symbol">&gt;</span>, p3<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T3</span><span class="tsd-signature-symbol">&gt;</span>, p4<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T4</span><span class="tsd-signature-symbol">&gt;</span>, p5<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T5</span><span class="tsd-signature-symbol">&gt;</span>, p6<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T6</span><span class="tsd-signature-symbol">&gt;</span>, p7<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T7</span><span class="tsd-signature-symbol">&gt;</span>, p8<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T8</span><span class="tsd-signature-symbol">&gt;</span>, p9<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T9</span><span class="tsd-signature-symbol">&gt;</span>, p10<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T10</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">AnyPredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T2</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T3</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T4</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T5</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T6</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T7</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T8</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T9</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T10</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>predicate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">AnyPredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>array<span class="tsd-signature-symbol">: </span><a href="../classes/arraypredicate.html" class="tsd-signature-type" data-tsd-kind="Class">ArrayPredicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>arrayBuffer<span class="tsd-signature-symbol">: </span><a href="../classes/arraybufferpredicate.html" class="tsd-signature-type" data-tsd-kind="Class">ArrayBufferPredicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ArrayBuffer</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ArrayBuffer</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>boolean<span class="tsd-signature-symbol">: </span><a href="../classes/booleanpredicate.html" class="tsd-signature-type" data-tsd-kind="Class">BooleanPredicate</a><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>buffer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Predicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>dataView<span class="tsd-signature-symbol">: </span><a href="../classes/dataviewpredicate.html" class="tsd-signature-type" data-tsd-kind="Class">DataViewPredicate</a><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">DataView</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>date<span class="tsd-signature-symbol">: </span><a href="../classes/datepredicate.html" class="tsd-signature-type" data-tsd-kind="Class">DatePredicate</a><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>error<span class="tsd-signature-symbol">: </span><a href="../classes/errorpredicate.html" class="tsd-signature-type" data-tsd-kind="Class">ErrorPredicate</a><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Error</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>float32Array<span class="tsd-signature-symbol">: </span><a href="../classes/typedarraypredicate.html" class="tsd-signature-type" data-tsd-kind="Class">TypedArrayPredicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Float32Array</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Float32Array</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>float64Array<span class="tsd-signature-symbol">: </span><a href="../classes/typedarraypredicate.html" class="tsd-signature-type" data-tsd-kind="Class">TypedArrayPredicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Float64Array</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Float64Array</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>function<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Predicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Function</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Function</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>int16Array<span class="tsd-signature-symbol">: </span><a href="../classes/typedarraypredicate.html" class="tsd-signature-type" data-tsd-kind="Class">TypedArrayPredicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Int16Array</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Int16Array</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>int32Array<span class="tsd-signature-symbol">: </span><a href="../classes/typedarraypredicate.html" class="tsd-signature-type" data-tsd-kind="Class">TypedArrayPredicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Int32Array</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Int32Array</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>int8Array<span class="tsd-signature-symbol">: </span><a href="../classes/typedarraypredicate.html" class="tsd-signature-type" data-tsd-kind="Class">TypedArrayPredicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Int8Array</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Int8Array</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>iterable<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Predicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Iterable</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Iterable</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>map<span class="tsd-signature-symbol">: </span><a href="../classes/mappredicate.html" class="tsd-signature-type" data-tsd-kind="Class">MapPredicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>nan<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Predicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>null<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Predicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>nullOrUndefined<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Predicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>number<span class="tsd-signature-symbol">: </span><a href="../classes/numberpredicate.html" class="tsd-signature-type" data-tsd-kind="Class">NumberPredicate</a><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>object<span class="tsd-signature-symbol">: </span><a href="../classes/objectpredicate.html" class="tsd-signature-type" data-tsd-kind="Class">ObjectPredicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>promise<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Predicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>regExp<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Predicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>set<span class="tsd-signature-symbol">: </span><a href="../classes/setpredicate.html" class="tsd-signature-type" data-tsd-kind="Class">SetPredicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>sharedArrayBuffer<span class="tsd-signature-symbol">: </span><a href="../classes/arraybufferpredicate.html" class="tsd-signature-type" data-tsd-kind="Class">ArrayBufferPredicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">SharedArrayBuffer</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">SharedArrayBuffer</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>string<span class="tsd-signature-symbol">: </span><a href="../classes/stringpredicate.html" class="tsd-signature-type" data-tsd-kind="Class">StringPredicate</a><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>symbol<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Predicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">symbol</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>typedArray<span class="tsd-signature-symbol">: </span><a href="../classes/typedarraypredicate.html" class="tsd-signature-type" data-tsd-kind="Class">TypedArrayPredicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TypedArray</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Uint8Array</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Int8Array</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Uint8ClampedArray</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Int16Array</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Uint16Array</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Int32Array</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Uint32Array</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Float32Array</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Float64Array</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">BigInt64Array</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">BigUint64Array</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>uint16Array<span class="tsd-signature-symbol">: </span><a href="../classes/typedarraypredicate.html" class="tsd-signature-type" data-tsd-kind="Class">TypedArrayPredicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Uint16Array</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Uint16Array</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>uint32Array<span class="tsd-signature-symbol">: </span><a href="../classes/typedarraypredicate.html" class="tsd-signature-type" data-tsd-kind="Class">TypedArrayPredicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Uint32Array</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Uint32Array</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>uint8Array<span class="tsd-signature-symbol">: </span><a href="../classes/typedarraypredicate.html" class="tsd-signature-type" data-tsd-kind="Class">TypedArrayPredicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Uint8Array</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Uint8Array</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>uint8ClampedArray<span class="tsd-signature-symbol">: </span><a href="../classes/typedarraypredicate.html" class="tsd-signature-type" data-tsd-kind="Class">TypedArrayPredicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Uint8ClampedArray</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Uint8ClampedArray</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>undefined<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Predicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>weakMap<span class="tsd-signature-symbol">: </span><a href="../classes/weakmappredicate.html" class="tsd-signature-type" data-tsd-kind="Class">WeakMapPredicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">WeakMap</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>weakSet<span class="tsd-signature-symbol">: </span><a href="../classes/weaksetpredicate.html" class="tsd-signature-type" data-tsd-kind="Class">WeakSetPredicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">WeakSet</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sindresorhus/ow/blob/7798207/source/modifiers.ts#L12">source/modifiers.ts:12</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Make the following predicate optional so it doesn&#39;t fail when the value is <code>undefined</code>.</p>
+						</div>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>any<span class="tsd-signature-symbol">: </span>&lt;T1&gt;<span class="tsd-signature-symbol">(</span>p1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T1</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">AnyPredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T1</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span>&lt;T1, T2&gt;<span class="tsd-signature-symbol">(</span>p1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T1</span><span class="tsd-signature-symbol">&gt;</span>, p2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T2</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">AnyPredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T2</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span>&lt;T1, T2, T3&gt;<span class="tsd-signature-symbol">(</span>p1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T1</span><span class="tsd-signature-symbol">&gt;</span>, p2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T2</span><span class="tsd-signature-symbol">&gt;</span>, p3<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T3</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">AnyPredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T2</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T3</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span>&lt;T1, T2, T3, T4&gt;<span class="tsd-signature-symbol">(</span>p1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T1</span><span class="tsd-signature-symbol">&gt;</span>, p2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T2</span><span class="tsd-signature-symbol">&gt;</span>, p3<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T3</span><span class="tsd-signature-symbol">&gt;</span>, p4<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T4</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">AnyPredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T2</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T3</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T4</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span>&lt;T1, T2, T3, T4, T5&gt;<span class="tsd-signature-symbol">(</span>p1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T1</span><span class="tsd-signature-symbol">&gt;</span>, p2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T2</span><span class="tsd-signature-symbol">&gt;</span>, p3<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T3</span><span class="tsd-signature-symbol">&gt;</span>, p4<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T4</span><span class="tsd-signature-symbol">&gt;</span>, p5<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T5</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">AnyPredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T2</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T3</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T4</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T5</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span>&lt;T1, T2, T3, T4, T5, T6&gt;<span class="tsd-signature-symbol">(</span>p1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T1</span><span class="tsd-signature-symbol">&gt;</span>, p2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T2</span><span class="tsd-signature-symbol">&gt;</span>, p3<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T3</span><span class="tsd-signature-symbol">&gt;</span>, p4<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T4</span><span class="tsd-signature-symbol">&gt;</span>, p5<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T5</span><span class="tsd-signature-symbol">&gt;</span>, p6<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T6</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">AnyPredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T2</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T3</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T4</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T5</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T6</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span>&lt;T1, T2, T3, T4, T5, T6, T7&gt;<span class="tsd-signature-symbol">(</span>p1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T1</span><span class="tsd-signature-symbol">&gt;</span>, p2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T2</span><span class="tsd-signature-symbol">&gt;</span>, p3<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T3</span><span class="tsd-signature-symbol">&gt;</span>, p4<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T4</span><span class="tsd-signature-symbol">&gt;</span>, p5<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T5</span><span class="tsd-signature-symbol">&gt;</span>, p6<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T6</span><span class="tsd-signature-symbol">&gt;</span>, p7<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T7</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">AnyPredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T2</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T3</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T4</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T5</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T6</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T7</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span>&lt;T1, T2, T3, T4, T5, T6, T7, T8&gt;<span class="tsd-signature-symbol">(</span>p1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T1</span><span class="tsd-signature-symbol">&gt;</span>, p2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T2</span><span class="tsd-signature-symbol">&gt;</span>, p3<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T3</span><span class="tsd-signature-symbol">&gt;</span>, p4<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T4</span><span class="tsd-signature-symbol">&gt;</span>, p5<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T5</span><span class="tsd-signature-symbol">&gt;</span>, p6<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T6</span><span class="tsd-signature-symbol">&gt;</span>, p7<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T7</span><span class="tsd-signature-symbol">&gt;</span>, p8<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T8</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">AnyPredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T2</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T3</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T4</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T5</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T6</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T7</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T8</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span>&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9&gt;<span class="tsd-signature-symbol">(</span>p1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T1</span><span class="tsd-signature-symbol">&gt;</span>, p2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T2</span><span class="tsd-signature-symbol">&gt;</span>, p3<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T3</span><span class="tsd-signature-symbol">&gt;</span>, p4<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T4</span><span class="tsd-signature-symbol">&gt;</span>, p5<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T5</span><span class="tsd-signature-symbol">&gt;</span>, p6<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T6</span><span class="tsd-signature-symbol">&gt;</span>, p7<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T7</span><span class="tsd-signature-symbol">&gt;</span>, p8<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T8</span><span class="tsd-signature-symbol">&gt;</span>, p9<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T9</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">AnyPredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T2</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T3</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T4</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T5</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T6</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T7</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T8</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T9</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span>&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10&gt;<span class="tsd-signature-symbol">(</span>p1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T1</span><span class="tsd-signature-symbol">&gt;</span>, p2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T2</span><span class="tsd-signature-symbol">&gt;</span>, p3<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T3</span><span class="tsd-signature-symbol">&gt;</span>, p4<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T4</span><span class="tsd-signature-symbol">&gt;</span>, p5<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T5</span><span class="tsd-signature-symbol">&gt;</span>, p6<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T6</span><span class="tsd-signature-symbol">&gt;</span>, p7<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T7</span><span class="tsd-signature-symbol">&gt;</span>, p8<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T8</span><span class="tsd-signature-symbol">&gt;</span>, p9<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T9</span><span class="tsd-signature-symbol">&gt;</span>, p10<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T10</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">AnyPredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T2</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T3</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T4</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T5</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T6</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T7</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T8</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T9</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T10</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>predicate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">AnyPredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>Test that the value matches at least one of the given predicates.</p>
+									</div>
+								</div>
+							</li>
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagReadonly">Readonly</span> array<span class="tsd-signature-symbol">: </span><a href="../classes/arraypredicate.html" class="tsd-signature-type" data-tsd-kind="Class">ArrayPredicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>Test the value to be an array.</p>
+									</div>
+								</div>
+							</li>
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagReadonly">Readonly</span> array<wbr>Buffer<span class="tsd-signature-symbol">: </span><a href="../classes/arraybufferpredicate.html" class="tsd-signature-type" data-tsd-kind="Class">ArrayBufferPredicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ArrayBuffer</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ArrayBuffer</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>Test the value to be a ArrayBuffer.</p>
+									</div>
+								</div>
+							</li>
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagReadonly">Readonly</span> boolean<span class="tsd-signature-symbol">: </span><a href="../classes/booleanpredicate.html" class="tsd-signature-type" data-tsd-kind="Class">BooleanPredicate</a><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>Test the value to be a boolean.</p>
+									</div>
+								</div>
+							</li>
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagReadonly">Readonly</span> buffer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Predicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>Test the value to be a Buffer.</p>
+									</div>
+								</div>
+							</li>
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagReadonly">Readonly</span> data<wbr>View<span class="tsd-signature-symbol">: </span><a href="../classes/dataviewpredicate.html" class="tsd-signature-type" data-tsd-kind="Class">DataViewPredicate</a><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">DataView</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>Test the value to be a DataView.</p>
+									</div>
+								</div>
+							</li>
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagReadonly">Readonly</span> date<span class="tsd-signature-symbol">: </span><a href="../classes/datepredicate.html" class="tsd-signature-type" data-tsd-kind="Class">DatePredicate</a><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>Test the value to be a Date.</p>
+									</div>
+								</div>
+							</li>
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagReadonly">Readonly</span> error<span class="tsd-signature-symbol">: </span><a href="../classes/errorpredicate.html" class="tsd-signature-type" data-tsd-kind="Class">ErrorPredicate</a><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Error</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>Test the value to be an Error.</p>
+									</div>
+								</div>
+							</li>
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagReadonly">Readonly</span> float32<wbr>Array<span class="tsd-signature-symbol">: </span><a href="../classes/typedarraypredicate.html" class="tsd-signature-type" data-tsd-kind="Class">TypedArrayPredicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Float32Array</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Float32Array</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>Test the value to be a Float32Array.</p>
+									</div>
+								</div>
+							</li>
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagReadonly">Readonly</span> float64<wbr>Array<span class="tsd-signature-symbol">: </span><a href="../classes/typedarraypredicate.html" class="tsd-signature-type" data-tsd-kind="Class">TypedArrayPredicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Float64Array</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Float64Array</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>Test the value to be a Float64Array.</p>
+									</div>
+								</div>
+							</li>
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagReadonly">Readonly</span> function<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Predicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Function</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Function</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>Test the value to be a Function.</p>
+									</div>
+								</div>
+							</li>
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagReadonly">Readonly</span> int16<wbr>Array<span class="tsd-signature-symbol">: </span><a href="../classes/typedarraypredicate.html" class="tsd-signature-type" data-tsd-kind="Class">TypedArrayPredicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Int16Array</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Int16Array</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>Test the value to be a Int16Array.</p>
+									</div>
+								</div>
+							</li>
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagReadonly">Readonly</span> int32<wbr>Array<span class="tsd-signature-symbol">: </span><a href="../classes/typedarraypredicate.html" class="tsd-signature-type" data-tsd-kind="Class">TypedArrayPredicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Int32Array</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Int32Array</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>Test the value to be a Int32Array.</p>
+									</div>
+								</div>
+							</li>
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagReadonly">Readonly</span> int8<wbr>Array<span class="tsd-signature-symbol">: </span><a href="../classes/typedarraypredicate.html" class="tsd-signature-type" data-tsd-kind="Class">TypedArrayPredicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Int8Array</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Int8Array</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>Test the value to be a Int8Array.</p>
+									</div>
+								</div>
+							</li>
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagReadonly">Readonly</span> iterable<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Predicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Iterable</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Iterable</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>Test the value to be Iterable.</p>
+									</div>
+								</div>
+							</li>
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagReadonly">Readonly</span> map<span class="tsd-signature-symbol">: </span><a href="../classes/mappredicate.html" class="tsd-signature-type" data-tsd-kind="Class">MapPredicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>Test the value to be a Map.</p>
+									</div>
+								</div>
+							</li>
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagReadonly">Readonly</span> nan<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Predicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>Test the value to be not a number.</p>
+									</div>
+								</div>
+							</li>
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagReadonly">Readonly</span> null<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Predicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>Test the value to be null.</p>
+									</div>
+								</div>
+							</li>
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagReadonly">Readonly</span> null<wbr>OrUndefined<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Predicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>Test the value to be null or undefined.</p>
+									</div>
+								</div>
+							</li>
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagReadonly">Readonly</span> number<span class="tsd-signature-symbol">: </span><a href="../classes/numberpredicate.html" class="tsd-signature-type" data-tsd-kind="Class">NumberPredicate</a><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>Test the value to be a number.</p>
+									</div>
+								</div>
+							</li>
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagReadonly">Readonly</span> object<span class="tsd-signature-symbol">: </span><a href="../classes/objectpredicate.html" class="tsd-signature-type" data-tsd-kind="Class">ObjectPredicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>Test the value to be an object.</p>
+									</div>
+								</div>
+							</li>
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagReadonly">Readonly</span> promise<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Predicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>Test the value to be a Promise.</p>
+									</div>
+								</div>
+							</li>
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagReadonly">Readonly</span> reg<wbr>Exp<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Predicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>Test the value to be a RegExp.</p>
+									</div>
+								</div>
+							</li>
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagReadonly">Readonly</span> set<span class="tsd-signature-symbol">: </span><a href="../classes/setpredicate.html" class="tsd-signature-type" data-tsd-kind="Class">SetPredicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>Test the value to be a Set.</p>
+									</div>
+								</div>
+							</li>
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagReadonly">Readonly</span> shared<wbr>Array<wbr>Buffer<span class="tsd-signature-symbol">: </span><a href="../classes/arraybufferpredicate.html" class="tsd-signature-type" data-tsd-kind="Class">ArrayBufferPredicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">SharedArrayBuffer</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">SharedArrayBuffer</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>Test the value to be a SharedArrayBuffer.</p>
+									</div>
+								</div>
+							</li>
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagReadonly">Readonly</span> string<span class="tsd-signature-symbol">: </span><a href="../classes/stringpredicate.html" class="tsd-signature-type" data-tsd-kind="Class">StringPredicate</a><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>Test the value to be a string.</p>
+									</div>
+								</div>
+							</li>
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagReadonly">Readonly</span> symbol<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Predicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">symbol</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>Test the value to be a Symbol.</p>
+									</div>
+								</div>
+							</li>
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagReadonly">Readonly</span> typed<wbr>Array<span class="tsd-signature-symbol">: </span><a href="../classes/typedarraypredicate.html" class="tsd-signature-type" data-tsd-kind="Class">TypedArrayPredicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TypedArray</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Uint8Array</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Int8Array</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Uint8ClampedArray</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Int16Array</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Uint16Array</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Int32Array</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Uint32Array</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Float32Array</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Float64Array</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">BigInt64Array</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">BigUint64Array</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>Test the value to be a typed array.</p>
+									</div>
+								</div>
+							</li>
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagReadonly">Readonly</span> uint16<wbr>Array<span class="tsd-signature-symbol">: </span><a href="../classes/typedarraypredicate.html" class="tsd-signature-type" data-tsd-kind="Class">TypedArrayPredicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Uint16Array</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Uint16Array</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>Test the value to be a Uint16Array.</p>
+									</div>
+								</div>
+							</li>
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagReadonly">Readonly</span> uint32<wbr>Array<span class="tsd-signature-symbol">: </span><a href="../classes/typedarraypredicate.html" class="tsd-signature-type" data-tsd-kind="Class">TypedArrayPredicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Uint32Array</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Uint32Array</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>Test the value to be a Uint32Array.</p>
+									</div>
+								</div>
+							</li>
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagReadonly">Readonly</span> uint8<wbr>Array<span class="tsd-signature-symbol">: </span><a href="../classes/typedarraypredicate.html" class="tsd-signature-type" data-tsd-kind="Class">TypedArrayPredicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Uint8Array</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Uint8Array</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>Test the value to be a Uint8Array.</p>
+									</div>
+								</div>
+							</li>
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagReadonly">Readonly</span> uint8<wbr>Clamped<wbr>Array<span class="tsd-signature-symbol">: </span><a href="../classes/typedarraypredicate.html" class="tsd-signature-type" data-tsd-kind="Class">TypedArrayPredicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Uint8ClampedArray</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Uint8ClampedArray</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>Test the value to be a Uint8ClampedArray.</p>
+									</div>
+								</div>
+							</li>
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagReadonly">Readonly</span> undefined<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Predicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>Test the value to be undefined.</p>
+									</div>
+								</div>
+							</li>
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagReadonly">Readonly</span> weak<wbr>Map<span class="tsd-signature-symbol">: </span><a href="../classes/weakmappredicate.html" class="tsd-signature-type" data-tsd-kind="Class">WeakMapPredicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">WeakMap</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>Test the value to be a WeakMap.</p>
+									</div>
+								</div>
+							</li>
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagReadonly">Readonly</span> weak<wbr>Set<span class="tsd-signature-symbol">: </span><a href="../classes/weaksetpredicate.html" class="tsd-signature-type" data-tsd-kind="Class">WeakSetPredicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">BasePredicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">WeakSet</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>Test the value to be a WeakSet.</p>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="promise-1" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> promise</h3>
+					<div class="tsd-signature tsd-kind-icon">promise<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Predicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sindresorhus/ow/blob/7798207/source/predicates.ts#L119">source/predicates.ts:119</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Test the value to be a Promise.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="regexp-1" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> reg<wbr>Exp</h3>
+					<div class="tsd-signature tsd-kind-icon">reg<wbr>Exp<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Predicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sindresorhus/ow/blob/7798207/source/predicates.ts#L114">source/predicates.ts:114</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Test the value to be a RegExp.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="set-1" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> set</h3>
+					<div class="tsd-signature tsd-kind-icon">set<span class="tsd-signature-symbol">:</span> <a href="../classes/setpredicate.html" class="tsd-signature-type" data-tsd-kind="Class">SetPredicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sindresorhus/ow/blob/7798207/source/predicates.ts#L94">source/predicates.ts:94</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Test the value to be a Set.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="sharedarraybuffer-1" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> shared<wbr>Array<wbr>Buffer</h3>
+					<div class="tsd-signature tsd-kind-icon">shared<wbr>Array<wbr>Buffer<span class="tsd-signature-symbol">:</span> <a href="../classes/arraybufferpredicate.html" class="tsd-signature-type" data-tsd-kind="Class">ArrayBufferPredicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">SharedArrayBuffer</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sindresorhus/ow/blob/7798207/source/predicates.ts#L179">source/predicates.ts:179</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Test the value to be a SharedArrayBuffer.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="string-1" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> string</h3>
+					<div class="tsd-signature tsd-kind-icon">string<span class="tsd-signature-symbol">:</span> <a href="../classes/stringpredicate.html" class="tsd-signature-type" data-tsd-kind="Class">StringPredicate</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sindresorhus/ow/blob/7798207/source/predicates.ts#L24">source/predicates.ts:24</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Test the value to be a string.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="symbol-1" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> symbol</h3>
+					<div class="tsd-signature tsd-kind-icon">symbol<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Predicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">symbol</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sindresorhus/ow/blob/7798207/source/predicates.ts#L59">source/predicates.ts:59</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Test the value to be a Symbol.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="typedarray-1" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> typed<wbr>Array</h3>
+					<div class="tsd-signature tsd-kind-icon">typed<wbr>Array<span class="tsd-signature-symbol">:</span> <a href="../classes/typedarraypredicate.html" class="tsd-signature-type" data-tsd-kind="Class">TypedArrayPredicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TypedArray</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sindresorhus/ow/blob/7798207/source/predicates.ts#L124">source/predicates.ts:124</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Test the value to be a typed array.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="uint16array-1" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> uint16<wbr>Array</h3>
+					<div class="tsd-signature tsd-kind-icon">uint16<wbr>Array<span class="tsd-signature-symbol">:</span> <a href="../classes/typedarraypredicate.html" class="tsd-signature-type" data-tsd-kind="Class">TypedArrayPredicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Uint16Array</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sindresorhus/ow/blob/7798207/source/predicates.ts#L149">source/predicates.ts:149</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Test the value to be a Uint16Array.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="uint32array-1" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> uint32<wbr>Array</h3>
+					<div class="tsd-signature tsd-kind-icon">uint32<wbr>Array<span class="tsd-signature-symbol">:</span> <a href="../classes/typedarraypredicate.html" class="tsd-signature-type" data-tsd-kind="Class">TypedArrayPredicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Uint32Array</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sindresorhus/ow/blob/7798207/source/predicates.ts#L159">source/predicates.ts:159</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Test the value to be a Uint32Array.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="uint8array-1" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> uint8<wbr>Array</h3>
+					<div class="tsd-signature tsd-kind-icon">uint8<wbr>Array<span class="tsd-signature-symbol">:</span> <a href="../classes/typedarraypredicate.html" class="tsd-signature-type" data-tsd-kind="Class">TypedArrayPredicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Uint8Array</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sindresorhus/ow/blob/7798207/source/predicates.ts#L134">source/predicates.ts:134</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Test the value to be a Uint8Array.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="uint8clampedarray-1" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> uint8<wbr>Clamped<wbr>Array</h3>
+					<div class="tsd-signature tsd-kind-icon">uint8<wbr>Clamped<wbr>Array<span class="tsd-signature-symbol">:</span> <a href="../classes/typedarraypredicate.html" class="tsd-signature-type" data-tsd-kind="Class">TypedArrayPredicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Uint8ClampedArray</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sindresorhus/ow/blob/7798207/source/predicates.ts#L139">source/predicates.ts:139</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Test the value to be a Uint8ClampedArray.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="undefined-1" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> undefined</h3>
+					<div class="tsd-signature tsd-kind-icon">undefined<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Predicate</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sindresorhus/ow/blob/7798207/source/predicates.ts#L39">source/predicates.ts:39</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Test the value to be undefined.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="weakmap-1" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> weak<wbr>Map</h3>
+					<div class="tsd-signature tsd-kind-icon">weak<wbr>Map<span class="tsd-signature-symbol">:</span> <a href="../classes/weakmappredicate.html" class="tsd-signature-type" data-tsd-kind="Class">WeakMapPredicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sindresorhus/ow/blob/7798207/source/predicates.ts#L89">source/predicates.ts:89</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Test the value to be a WeakMap.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="weakset-1" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> weak<wbr>Set</h3>
+					<div class="tsd-signature tsd-kind-icon">weak<wbr>Set<span class="tsd-signature-symbol">:</span> <a href="../classes/weaksetpredicate.html" class="tsd-signature-type" data-tsd-kind="Class">WeakSetPredicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sindresorhus/ow/blob/7798207/source/predicates.ts#L99">source/predicates.ts:99</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Test the value to be a WeakSet.</p>
+						</div>
+					</div>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="../classes/arraybufferpredicate.html" class="tsd-kind-icon">Array<wbr>Buffer<wbr>Predicate</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="../classes/arraypredicate.html" class="tsd-kind-icon">Array<wbr>Predicate</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="../classes/booleanpredicate.html" class="tsd-kind-icon">Boolean<wbr>Predicate</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="../classes/dataviewpredicate.html" class="tsd-kind-icon">Data<wbr>View<wbr>Predicate</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="../classes/datepredicate.html" class="tsd-kind-icon">Date<wbr>Predicate</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="../classes/errorpredicate.html" class="tsd-kind-icon">Error<wbr>Predicate</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="../classes/mappredicate.html" class="tsd-kind-icon">Map<wbr>Predicate</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="../classes/numberpredicate.html" class="tsd-kind-icon">Number<wbr>Predicate</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="../classes/objectpredicate.html" class="tsd-kind-icon">Object<wbr>Predicate</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="../classes/setpredicate.html" class="tsd-kind-icon">Set<wbr>Predicate</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="../classes/stringpredicate.html" class="tsd-kind-icon">String<wbr>Predicate</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="../classes/typedarraypredicate.html" class="tsd-kind-icon">Typed<wbr>Array<wbr>Predicate</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="../classes/weakmappredicate.html" class="tsd-kind-icon">Weak<wbr>Map<wbr>Predicate</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="../classes/weaksetpredicate.html" class="tsd-kind-icon">Weak<wbr>Set<wbr>Predicate</a>
+					</li>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface tsd-has-type-parameter">
+						<a href="ow.html" class="tsd-kind-icon">Ow</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ow.html#any" class="tsd-kind-icon">any</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ow.html#array" class="tsd-kind-icon">array</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ow.html#arraybuffer" class="tsd-kind-icon">array<wbr>Buffer</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ow.html#boolean" class="tsd-kind-icon">boolean</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ow.html#buffer" class="tsd-kind-icon">buffer</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ow.html#create" class="tsd-kind-icon">create</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ow.html#dataview" class="tsd-kind-icon">data<wbr>View</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ow.html#date" class="tsd-kind-icon">date</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ow.html#error" class="tsd-kind-icon">error</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ow.html#float32array" class="tsd-kind-icon">float32<wbr>Array</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ow.html#float64array" class="tsd-kind-icon">float64<wbr>Array</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ow.html#function" class="tsd-kind-icon">function</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ow.html#int16array" class="tsd-kind-icon">int16<wbr>Array</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ow.html#int32array" class="tsd-kind-icon">int32<wbr>Array</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ow.html#int8array" class="tsd-kind-icon">int8<wbr>Array</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ow.html#isvalid" class="tsd-kind-icon">is<wbr>Valid</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ow.html#iterable" class="tsd-kind-icon">iterable</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ow.html#map" class="tsd-kind-icon">map</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ow.html#nan" class="tsd-kind-icon">nan</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ow.html#null" class="tsd-kind-icon">null</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ow.html#nullorundefined" class="tsd-kind-icon">null<wbr>OrUndefined</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ow.html#number" class="tsd-kind-icon">number</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ow.html#object" class="tsd-kind-icon">object</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ow.html#optional" class="tsd-kind-icon">optional</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ow.html#promise-1" class="tsd-kind-icon">promise</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ow.html#regexp-1" class="tsd-kind-icon">reg<wbr>Exp</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ow.html#set-1" class="tsd-kind-icon">set</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ow.html#sharedarraybuffer-1" class="tsd-kind-icon">shared<wbr>Array<wbr>Buffer</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ow.html#string-1" class="tsd-kind-icon">string</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ow.html#symbol-1" class="tsd-kind-icon">symbol</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ow.html#typedarray-1" class="tsd-kind-icon">typed<wbr>Array</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ow.html#uint16array-1" class="tsd-kind-icon">uint16<wbr>Array</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ow.html#uint32array-1" class="tsd-kind-icon">uint32<wbr>Array</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ow.html#uint8array-1" class="tsd-kind-icon">uint8<wbr>Array</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ow.html#uint8clampedarray-1" class="tsd-kind-icon">uint8<wbr>Clamped<wbr>Array</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ow.html#undefined-1" class="tsd-kind-icon">undefined</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ow.html#weakmap-1" class="tsd-kind-icon">weak<wbr>Map</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ow.html#weakset-1" class="tsd-kind-icon">weak<wbr>Set</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="reusablevalidator.html" class="tsd-kind-icon">Reusable<wbr>Validator</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="shape.html" class="tsd-kind-icon">Shape</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="../modules.html#default" class="tsd-kind-icon">default</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer>
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

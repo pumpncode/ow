@@ -1,0 +1,425 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>ow</title>
+	<meta name="description" content="Documentation for ow">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<script async src="assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.json" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">ow</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<h1>Project ow</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<div class="tsd-panel tsd-typography">
+				<p align="center">
+					<img src="media/logo.png" width="300">
+					<br>
+					<br>
+				</p>
+				<p><a href="https://codecov.io/gh/sindresorhus/ow"><img src="https://codecov.io/gh/sindresorhus/ow/branch/master/graph/badge.svg" alt="Coverage Status"></a> <a href="https://bundlephobia.com/result?p=ow"><img src="https://badgen.net/bundlephobia/minzip/ow" alt="gzip size"></a> <a href="https://packagephobia.now.sh/result?p=ow"><img src="https://packagephobia.now.sh/badge?p=ow" alt="install size"></a></p>
+				<blockquote>
+					<p>Function argument validation for humans</p>
+				</blockquote>
+				<a href="#highlights" id="highlights" style="color: inherit; text-decoration: none;">
+					<h2>Highlights</h2>
+				</a>
+				<ul>
+					<li>Expressive chainable API</li>
+					<li>Lots of built-in validations</li>
+					<li>Supports custom validations</li>
+					<li>Automatic label inference in Node.js</li>
+					<li>Written in TypeScript</li>
+				</ul>
+				<a href="#install" id="install" style="color: inherit; text-decoration: none;">
+					<h2>Install</h2>
+				</a>
+				<pre><code><span style="color: #001080">$</span><span style="color: #000000"> </span><span style="color: #001080">npm</span><span style="color: #000000"> </span><span style="color: #001080">install</span><span style="color: #000000"> </span><span style="color: #001080">ow</span>
+</code></pre>
+				<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
+					<h2>Usage</h2>
+				</a>
+				<p><em>If you use CommonJS, you need to import is as <code>const {default: ow} = require(&#39;ow&#39;)</code>.</em></p>
+				<pre><code class="language-ts"><span style="color: #AF00DB">import</span><span style="color: #000000"> </span><span style="color: #001080">ow</span><span style="color: #000000"> </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;ow&#039;</span><span style="color: #000000">;</span>
+
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #795E26">unicorn</span><span style="color: #000000"> = </span><span style="color: #001080">input</span><span style="color: #000000"> </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
+<span style="color: #000000">    </span><span style="color: #795E26">ow</span><span style="color: #000000">(</span><span style="color: #001080">input</span><span style="color: #000000">, </span><span style="color: #001080">ow</span><span style="color: #000000">.</span><span style="color: #001080">string</span><span style="color: #000000">.</span><span style="color: #795E26">minLength</span><span style="color: #000000">(</span><span style="color: #098658">5</span><span style="color: #000000">));</span>
+
+<span style="color: #000000">    </span><span style="color: #008000">// …</span>
+<span style="color: #000000">};</span>
+
+<span style="color: #795E26">unicorn</span><span style="color: #000000">(</span><span style="color: #098658">3</span><span style="color: #000000">);</span>
+<span style="color: #008000">//=&gt; ArgumentError: Expected `input` to be of type `string` but received type `number`</span>
+
+<span style="color: #795E26">unicorn</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;yo&#039;</span><span style="color: #000000">);</span>
+<span style="color: #008000">//=&gt; ArgumentError: Expected string `input` to have a minimum length of `5`, got `yo`</span>
+</code></pre>
+				<p>We can also match the shape of an object.</p>
+				<pre><code class="language-ts"><span style="color: #AF00DB">import</span><span style="color: #000000"> </span><span style="color: #001080">ow</span><span style="color: #000000"> </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;ow&#039;</span><span style="color: #000000">;</span>
+
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">unicorn</span><span style="color: #000000"> = {</span>
+<span style="color: #000000">    </span><span style="color: #001080">rainbow:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;🌈&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">    </span><span style="color: #001080">stars:</span><span style="color: #000000"> {</span>
+<span style="color: #000000">        </span><span style="color: #001080">value:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;🌟&#039;</span>
+<span style="color: #000000">    }</span>
+<span style="color: #000000">};</span>
+
+<span style="color: #795E26">ow</span><span style="color: #000000">(</span><span style="color: #001080">unicorn</span><span style="color: #000000">, </span><span style="color: #001080">ow</span><span style="color: #000000">.</span><span style="color: #001080">object</span><span style="color: #000000">.</span><span style="color: #795E26">exactShape</span><span style="color: #000000">({</span>
+<span style="color: #000000">    </span><span style="color: #001080">rainbow:</span><span style="color: #000000"> </span><span style="color: #001080">ow</span><span style="color: #000000">.</span><span style="color: #001080">string</span><span style="color: #000000">,</span>
+<span style="color: #000000">    </span><span style="color: #001080">stars:</span><span style="color: #000000"> {</span>
+<span style="color: #000000">        </span><span style="color: #001080">value:</span><span style="color: #000000"> </span><span style="color: #001080">ow</span><span style="color: #000000">.</span><span style="color: #001080">number</span>
+<span style="color: #000000">    }</span>
+<span style="color: #000000">}));</span>
+<span style="color: #008000">//=&gt; ArgumentError: Expected property `stars.value` to be of type `number` but received type `string` in object `unicorn`</span>
+</code></pre>
+				<p><strong><em>Note:</em></strong> If you intend on using <code>ow</code> for development purposes only, use <code>require(&#39;ow/dev-only&#39;)</code> instead of the usual <code>import &#39;ow&#39;</code>, and run the bundler with <code>NODE_ENV</code> set to <code>production</code> (e.g. <code>$ NODE_ENV=&quot;production&quot; parcel build index.js</code>). This will make <code>ow</code> automatically export a shim when running in production, which should result in a significantly lower bundle size.</p>
+				<a href="#api" id="api" style="color: inherit; text-decoration: none;">
+					<h2>API</h2>
+				</a>
+				<p><a href="https://sindresorhus.com/ow/interfaces/ow.html">Complete API documentation</a></p>
+				<p>Ow includes TypeScript type guards, so using it will narrow the type of previously-unknown values.</p>
+				<pre><code class="language-ts"><span style="color: #0000FF">function</span><span style="color: #000000"> (</span><span style="color: #001080">input</span><span style="color: #000000">: </span><span style="color: #267F99">unknown</span><span style="color: #000000">) {</span>
+<span style="color: #000000">    </span><span style="color: #001080">input</span><span style="color: #000000">.</span><span style="color: #795E26">slice</span><span style="color: #000000">(</span><span style="color: #098658">0</span><span style="color: #000000">, </span><span style="color: #098658">3</span><span style="color: #000000">) </span><span style="color: #008000">// Error, Property &#039;slice&#039; does not exist on type &#039;unknown&#039;</span>
+
+<span style="color: #000000">    </span><span style="color: #795E26">ow</span><span style="color: #000000">(</span><span style="color: #001080">input</span><span style="color: #000000">, </span><span style="color: #001080">ow</span><span style="color: #000000">.</span><span style="color: #001080">string</span><span style="color: #000000">)</span>
+
+<span style="color: #000000">    </span><span style="color: #001080">input</span><span style="color: #000000">.</span><span style="color: #795E26">slice</span><span style="color: #000000">(</span><span style="color: #098658">0</span><span style="color: #000000">, </span><span style="color: #098658">3</span><span style="color: #000000">) </span><span style="color: #008000">// OK</span>
+<span style="color: #000000">}</span>
+</code></pre>
+				<a href="#owvalue-predicate" id="owvalue-predicate" style="color: inherit; text-decoration: none;">
+					<h3>ow(value, predicate)</h3>
+				</a>
+				<p>Test if <code>value</code> matches the provided <code>predicate</code>. Throws an <code>ArgumentError</code> if the test fails.</p>
+				<a href="#owvalue-label-predicate" id="owvalue-label-predicate" style="color: inherit; text-decoration: none;">
+					<h3>ow(value, label, predicate)</h3>
+				</a>
+				<p>Test if <code>value</code> matches the provided <code>predicate</code>. Throws an <code>ArgumentError</code> with the specified <code>label</code> if the test fails.</p>
+				<p>The <code>label</code> is automatically inferred in Node.js but you can override it by passing in a value for <code>label</code>. The automatic label inference doesn&#39;t work in the browser.</p>
+				<a href="#owisvalidvalue-predicate" id="owisvalidvalue-predicate" style="color: inherit; text-decoration: none;">
+					<h3>ow.isValid(value, predicate)</h3>
+				</a>
+				<p>Returns <code>true</code> if the value matches the predicate, otherwise returns <code>false</code>.</p>
+				<a href="#owcreatepredicate" id="owcreatepredicate" style="color: inherit; text-decoration: none;">
+					<h3>ow.create(predicate)</h3>
+				</a>
+				<p>Create a reusable validator.</p>
+				<pre><code class="language-ts"><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">checkPassword</span><span style="color: #000000"> = </span><span style="color: #001080">ow</span><span style="color: #000000">.</span><span style="color: #795E26">create</span><span style="color: #000000">(</span><span style="color: #001080">ow</span><span style="color: #000000">.</span><span style="color: #001080">string</span><span style="color: #000000">.</span><span style="color: #795E26">minLength</span><span style="color: #000000">(</span><span style="color: #098658">6</span><span style="color: #000000">));</span>
+
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">password</span><span style="color: #000000"> = </span><span style="color: #A31515">&#039;foo&#039;</span><span style="color: #000000">;</span>
+
+<span style="color: #795E26">checkPassword</span><span style="color: #000000">(</span><span style="color: #001080">password</span><span style="color: #000000">);</span>
+<span style="color: #008000">//=&gt; ArgumentError: Expected string `password` to have a minimum length of `6`, got `foo`</span>
+</code></pre>
+				<a href="#owcreatelabel-predicate" id="owcreatelabel-predicate" style="color: inherit; text-decoration: none;">
+					<h3>ow.create(label, predicate)</h3>
+				</a>
+				<p>Create a reusable validator with a specific <code>label</code>.</p>
+				<pre><code class="language-ts"><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">checkPassword</span><span style="color: #000000"> = </span><span style="color: #001080">ow</span><span style="color: #000000">.</span><span style="color: #795E26">create</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;password&#039;</span><span style="color: #000000">, </span><span style="color: #001080">ow</span><span style="color: #000000">.</span><span style="color: #001080">string</span><span style="color: #000000">.</span><span style="color: #795E26">minLength</span><span style="color: #000000">(</span><span style="color: #098658">6</span><span style="color: #000000">));</span>
+
+<span style="color: #795E26">checkPassword</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;foo&#039;</span><span style="color: #000000">);</span>
+<span style="color: #008000">//=&gt; ArgumentError: Expected string `password` to have a minimum length of `6`, got `foo`</span>
+</code></pre>
+				<a href="#owanypredicate" id="owanypredicate" style="color: inherit; text-decoration: none;">
+					<h3>ow.any(...predicate[])</h3>
+				</a>
+				<p>Returns a predicate that verifies if the value matches at least one of the given predicates.</p>
+				<pre><code class="language-ts"><span style="color: #795E26">ow</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;foo&#039;</span><span style="color: #000000">, </span><span style="color: #001080">ow</span><span style="color: #000000">.</span><span style="color: #795E26">any</span><span style="color: #000000">(</span><span style="color: #001080">ow</span><span style="color: #000000">.</span><span style="color: #001080">string</span><span style="color: #000000">.</span><span style="color: #795E26">maxLength</span><span style="color: #000000">(</span><span style="color: #098658">3</span><span style="color: #000000">), </span><span style="color: #001080">ow</span><span style="color: #000000">.</span><span style="color: #001080">number</span><span style="color: #000000">));</span>
+</code></pre>
+				<a href="#owoptionaltype" id="owoptionaltype" style="color: inherit; text-decoration: none;">
+					<h3>ow.optional.{type}</h3>
+				</a>
+				<p>Makes the predicate optional. An optional predicate means that it doesn&#39;t fail if the value is <code>undefined</code>.</p>
+				<pre><code class="language-ts"><span style="color: #795E26">ow</span><span style="color: #000000">(</span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #001080">ow</span><span style="color: #000000">.</span><span style="color: #001080">optional</span><span style="color: #000000">.</span><span style="color: #001080">number</span><span style="color: #000000">);</span>
+
+<span style="color: #795E26">ow</span><span style="color: #000000">(</span><span style="color: #0000FF">undefined</span><span style="color: #000000">, </span><span style="color: #001080">ow</span><span style="color: #000000">.</span><span style="color: #001080">optional</span><span style="color: #000000">.</span><span style="color: #001080">number</span><span style="color: #000000">);</span>
+</code></pre>
+				<a href="#owtype" id="owtype" style="color: inherit; text-decoration: none;">
+					<h3>ow.{type}</h3>
+				</a>
+				<p>All the below types return a predicate. Every predicate has some extra operators that you can use to test the value even more fine-grained.</p>
+				<a href="#primitives" id="primitives" style="color: inherit; text-decoration: none;">
+					<h4>Primitives</h4>
+				</a>
+				<ul>
+					<li><a href="https://sindresorhus.com/ow/interfaces/ow.html#undefined-1"><code>undefined</code></a></li>
+					<li><a href="https://sindresorhus.com/ow/interfaces/ow.html#null"><code>null</code></a></li>
+					<li><a href="https://sindresorhus.com/ow/classes/stringpredicate.html"><code>string</code></a></li>
+					<li><a href="https://sindresorhus.com/ow/classes/numberpredicate.html"><code>number</code></a></li>
+					<li><a href="https://sindresorhus.com/ow/classes/booleanpredicate.html"><code>boolean</code></a></li>
+					<li><a href="https://sindresorhus.com/ow/interfaces/ow.html#symbol-1"><code>symbol</code></a></li>
+				</ul>
+				<a href="#built-in-types" id="built-in-types" style="color: inherit; text-decoration: none;">
+					<h4>Built-in types</h4>
+				</a>
+				<ul>
+					<li><a href="https://sindresorhus.com/ow/classes/arraypredicate.html"><code>array</code></a></li>
+					<li><a href="https://sindresorhus.com/ow/interfaces/ow.html#function"><code>function</code></a></li>
+					<li><a href="https://sindresorhus.com/ow/interfaces/ow.html#buffer"><code>buffer</code></a></li>
+					<li><a href="https://sindresorhus.com/ow/classes/objectpredicate.html"><code>object</code></a></li>
+					<li><a href="https://sindresorhus.com/ow/interfaces/ow.html#regexp-1"><code>regExp</code></a></li>
+					<li><a href="https://sindresorhus.com/ow/classes/datepredicate.html"><code>date</code></a></li>
+					<li><a href="https://sindresorhus.com/ow/classes/errorpredicate.html"><code>error</code></a></li>
+					<li><a href="https://sindresorhus.com/ow/interfaces/ow.html#promise-1"><code>promise</code></a></li>
+					<li><a href="https://sindresorhus.com/ow/classes/mappredicate.html"><code>map</code></a></li>
+					<li><a href="https://sindresorhus.com/ow/classes/setpredicate.html"><code>set</code></a></li>
+					<li><a href="https://sindresorhus.com/ow/classes/weakmappredicate.html"><code>weakMap</code></a></li>
+					<li><a href="https://sindresorhus.com/ow/classes/weaksetpredicate.html"><code>weakSet</code></a></li>
+				</ul>
+				<a href="#typed-arrays" id="typed-arrays" style="color: inherit; text-decoration: none;">
+					<h4>Typed arrays</h4>
+				</a>
+				<ul>
+					<li><a href="https://sindresorhus.com/ow/interfaces/ow.html#int8Array"><code>int8Array</code></a></li>
+					<li><a href="https://sindresorhus.com/ow/interfaces/ow.html#uint8Array-1"><code>uint8Array</code></a></li>
+					<li><a href="https://sindresorhus.com/ow/interfaces/ow.html#uint8ClampedArray-1"><code>uint8ClampedArray</code></a></li>
+					<li><a href="https://sindresorhus.com/ow/interfaces/ow.html#int16Array"><code>int16Array</code></a></li>
+					<li><a href="https://sindresorhus.com/ow/interfaces/ow.html#uint16Array-1"><code>uint16Array</code></a></li>
+					<li><a href="https://sindresorhus.com/ow/interfaces/ow.html#in32Array"><code>int32Array</code></a></li>
+					<li><a href="https://sindresorhus.com/ow/interfaces/ow.html#uin32Array-1"><code>uint32Array</code></a></li>
+					<li><a href="https://sindresorhus.com/ow/interfaces/ow.html#float32Array"><code>float32Array</code></a></li>
+					<li><a href="https://sindresorhus.com/ow/interfaces/ow.html#float64Array"><code>float64Array</code></a></li>
+				</ul>
+				<a href="#structured-data" id="structured-data" style="color: inherit; text-decoration: none;">
+					<h4>Structured data</h4>
+				</a>
+				<ul>
+					<li><a href="https://sindresorhus.com/ow/interfaces/ow.html#arraybuffer"><code>arrayBuffer</code></a></li>
+					<li><a href="https://sindresorhus.com/ow/interfaces/ow.html#dataview"><code>dataView</code></a></li>
+					<li><a href="https://sindresorhus.com/ow/interfaces/ow.html#sharedarraybuffer-1"><code>sharedArrayBuffer</code></a></li>
+				</ul>
+				<a href="#miscellaneous" id="miscellaneous" style="color: inherit; text-decoration: none;">
+					<h4>Miscellaneous</h4>
+				</a>
+				<ul>
+					<li><a href="https://sindresorhus.com/ow/interfaces/ow.html#nan"><code>nan</code></a></li>
+					<li><a href="https://sindresorhus.com/ow/interfaces/ow.html#nullorundefined"><code>nullOrUndefined</code></a></li>
+					<li><a href="https://sindresorhus.com/ow/interfaces/ow.html#iterable"><code>iterable</code></a></li>
+					<li><a href="https://sindresorhus.com/ow/interfaces/ow.html#typedarray-1"><code>typedArray</code></a></li>
+				</ul>
+				<a href="#predicates" id="predicates" style="color: inherit; text-decoration: none;">
+					<h3>Predicates</h3>
+				</a>
+				<p>The following predicates are available on every type.</p>
+				<a href="#not" id="not" style="color: inherit; text-decoration: none;">
+					<h4>not</h4>
+				</a>
+				<p>Inverts the following predicate.</p>
+				<pre><code class="language-ts"><span style="color: #795E26">ow</span><span style="color: #000000">(</span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #001080">ow</span><span style="color: #000000">.</span><span style="color: #001080">number</span><span style="color: #000000">.</span><span style="color: #001080">not</span><span style="color: #000000">.</span><span style="color: #001080">infinite</span><span style="color: #000000">);</span>
+
+<span style="color: #795E26">ow</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;&#039;</span><span style="color: #000000">, </span><span style="color: #001080">ow</span><span style="color: #000000">.</span><span style="color: #001080">string</span><span style="color: #000000">.</span><span style="color: #001080">not</span><span style="color: #000000">.</span><span style="color: #001080">empty</span><span style="color: #000000">);</span>
+<span style="color: #008000">//=&gt; ArgumentError: Expected string to not be empty, got ``</span>
+</code></pre>
+				<a href="#isfn" id="isfn" style="color: inherit; text-decoration: none;">
+					<h4>is(fn)</h4>
+				</a>
+				<p>Use a custom validation function. Return <code>true</code> if the value matches the validation, return <code>false</code> if it doesn&#39;t.</p>
+				<pre><code class="language-ts"><span style="color: #795E26">ow</span><span style="color: #000000">(</span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #001080">ow</span><span style="color: #000000">.</span><span style="color: #001080">number</span><span style="color: #000000">.</span><span style="color: #795E26">is</span><span style="color: #000000">(</span><span style="color: #001080">x</span><span style="color: #000000"> </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> </span><span style="color: #001080">x</span><span style="color: #000000"> &lt; </span><span style="color: #098658">10</span><span style="color: #000000">));</span>
+
+<span style="color: #795E26">ow</span><span style="color: #000000">(</span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #001080">ow</span><span style="color: #000000">.</span><span style="color: #001080">number</span><span style="color: #000000">.</span><span style="color: #795E26">is</span><span style="color: #000000">(</span><span style="color: #001080">x</span><span style="color: #000000"> </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> </span><span style="color: #001080">x</span><span style="color: #000000"> &gt; </span><span style="color: #098658">10</span><span style="color: #000000">));</span>
+<span style="color: #008000">//=&gt; ArgumentError: Expected `1` to pass custom validation function</span>
+</code></pre>
+				<p>Instead of returning <code>false</code>, you can also return a custom error message which results in a failure.</p>
+				<pre><code class="language-ts"><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #795E26">greaterThan</span><span style="color: #000000"> = (</span><span style="color: #001080">max</span><span style="color: #000000">: </span><span style="color: #267F99">number</span><span style="color: #000000">, </span><span style="color: #001080">x</span><span style="color: #000000">: </span><span style="color: #267F99">number</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
+<span style="color: #000000">    </span><span style="color: #AF00DB">return</span><span style="color: #000000"> </span><span style="color: #001080">x</span><span style="color: #000000"> &gt; </span><span style="color: #001080">max</span><span style="color: #000000"> || </span><span style="color: #A31515">`Expected </span><span style="color: #EE0000">\`</span><span style="color: #0000FF">${</span><span style="color: #001080">x</span><span style="color: #0000FF">}</span><span style="color: #EE0000">\`</span><span style="color: #A31515"> to be greater than </span><span style="color: #EE0000">\`</span><span style="color: #0000FF">${</span><span style="color: #001080">max</span><span style="color: #0000FF">}</span><span style="color: #EE0000">\`</span><span style="color: #A31515">`</span><span style="color: #000000">;</span>
+<span style="color: #000000">};</span>
+
+<span style="color: #795E26">ow</span><span style="color: #000000">(</span><span style="color: #098658">5</span><span style="color: #000000">, </span><span style="color: #001080">ow</span><span style="color: #000000">.</span><span style="color: #001080">number</span><span style="color: #000000">.</span><span style="color: #795E26">is</span><span style="color: #000000">(</span><span style="color: #001080">x</span><span style="color: #000000"> </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> </span><span style="color: #795E26">greaterThan</span><span style="color: #000000">(</span><span style="color: #098658">10</span><span style="color: #000000">, </span><span style="color: #001080">x</span><span style="color: #000000">)));</span>
+<span style="color: #008000">//=&gt; ArgumentError: Expected `5` to be greater than `10`</span>
+</code></pre>
+				<a href="#validatefn" id="validatefn" style="color: inherit; text-decoration: none;">
+					<h4>validate(fn)</h4>
+				</a>
+				<p>Use a custom validation object. The difference with <code>is</code> is that the function should return a validation object, which allows more flexibility.</p>
+				<pre><code class="language-ts"><span style="color: #795E26">ow</span><span style="color: #000000">(</span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #001080">ow</span><span style="color: #000000">.</span><span style="color: #001080">number</span><span style="color: #000000">.</span><span style="color: #795E26">validate</span><span style="color: #000000">(</span><span style="color: #001080">value</span><span style="color: #000000"> </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> ({</span>
+<span style="color: #000000">    </span><span style="color: #001080">validator:</span><span style="color: #000000"> </span><span style="color: #001080">value</span><span style="color: #000000"> &gt; </span><span style="color: #098658">10</span><span style="color: #000000">,</span>
+<span style="color: #000000">    </span><span style="color: #001080">message:</span><span style="color: #000000"> </span><span style="color: #A31515">`Expected value to be greater than 10, got </span><span style="color: #0000FF">${</span><span style="color: #001080">value</span><span style="color: #0000FF">}</span><span style="color: #A31515">`</span>
+<span style="color: #000000">})));</span>
+<span style="color: #008000">//=&gt; ArgumentError: (number) Expected value to be greater than 10, got 1</span>
+</code></pre>
+				<p>You can also pass in a function as <code>message</code> value which accepts the label as argument.</p>
+				<pre><code class="language-ts"><span style="color: #795E26">ow</span><span style="color: #000000">(</span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #A31515">&#039;input&#039;</span><span style="color: #000000">, </span><span style="color: #001080">ow</span><span style="color: #000000">.</span><span style="color: #001080">number</span><span style="color: #000000">.</span><span style="color: #795E26">validate</span><span style="color: #000000">(</span><span style="color: #001080">value</span><span style="color: #000000"> </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> ({</span>
+<span style="color: #000000">    </span><span style="color: #001080">validator:</span><span style="color: #000000"> </span><span style="color: #001080">value</span><span style="color: #000000"> &gt; </span><span style="color: #098658">10</span><span style="color: #000000">,</span>
+<span style="color: #000000">    </span><span style="color: #795E26">message</span><span style="color: #001080">:</span><span style="color: #000000"> </span><span style="color: #001080">label</span><span style="color: #000000"> </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> </span><span style="color: #A31515">`Expected </span><span style="color: #0000FF">${</span><span style="color: #001080">label</span><span style="color: #0000FF">}</span><span style="color: #A31515"> to be greater than 10, got </span><span style="color: #0000FF">${</span><span style="color: #001080">value</span><span style="color: #0000FF">}</span><span style="color: #A31515">`</span>
+<span style="color: #000000">})));</span>
+<span style="color: #008000">//=&gt; ArgumentError: Expected number `input` to be greater than 10, got 1</span>
+</code></pre>
+				<a href="#messagestring--fn" id="messagestring--fn" style="color: inherit; text-decoration: none;">
+					<h4>message(string | fn)</h4>
+				</a>
+				<p>Provide a custom message:</p>
+				<pre><code class="language-ts"><span style="color: #795E26">ow</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;🌈&#039;</span><span style="color: #000000">, </span><span style="color: #A31515">&#039;unicorn&#039;</span><span style="color: #000000">, </span><span style="color: #001080">ow</span><span style="color: #000000">.</span><span style="color: #001080">string</span><span style="color: #000000">.</span><span style="color: #795E26">equals</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;🦄&#039;</span><span style="color: #000000">).</span><span style="color: #795E26">message</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;Expected unicorn, got rainbow&#039;</span><span style="color: #000000">));</span>
+<span style="color: #008000">//=&gt; ArgumentError: Expected unicorn, got rainbow</span>
+</code></pre>
+				<p>You can also pass in a function which receives the value as the first parameter and the label as the second parameter and is expected to return the message.</p>
+				<pre><code class="language-ts"><span style="color: #795E26">ow</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;🌈&#039;</span><span style="color: #000000">, </span><span style="color: #001080">ow</span><span style="color: #000000">.</span><span style="color: #001080">string</span><span style="color: #000000">.</span><span style="color: #795E26">minLength</span><span style="color: #000000">(</span><span style="color: #098658">5</span><span style="color: #000000">).</span><span style="color: #795E26">message</span><span style="color: #000000">((</span><span style="color: #001080">value</span><span style="color: #000000">, </span><span style="color: #001080">label</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> </span><span style="color: #A31515">`Expected </span><span style="color: #0000FF">${</span><span style="color: #001080">label</span><span style="color: #0000FF">}</span><span style="color: #A31515">, to have a minimum length of 5, got </span><span style="color: #EE0000">\`</span><span style="color: #0000FF">${</span><span style="color: #001080">value</span><span style="color: #0000FF">}</span><span style="color: #EE0000">\`</span><span style="color: #A31515">`</span><span style="color: #000000">));</span>
+<span style="color: #008000">//=&gt; ArgumentError: Expected string, to be have a minimum length of 5, got `🌈`</span>
+</code></pre>
+				<p>It&#39;s also possible to add a separate message per validation:</p>
+				<pre><code class="language-ts"><span style="color: #795E26">ow</span><span style="color: #000000">(</span>
+<span style="color: #000000">    </span><span style="color: #A31515">&#039;1234&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">    </span><span style="color: #001080">ow</span><span style="color: #000000">.</span><span style="color: #001080">string</span>
+<span style="color: #000000">        .</span><span style="color: #795E26">minLength</span><span style="color: #000000">(</span><span style="color: #098658">5</span><span style="color: #000000">).</span><span style="color: #795E26">message</span><span style="color: #000000">((</span><span style="color: #001080">value</span><span style="color: #000000">, </span><span style="color: #001080">label</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> </span><span style="color: #A31515">`Expected </span><span style="color: #0000FF">${</span><span style="color: #001080">label</span><span style="color: #0000FF">}</span><span style="color: #A31515">, to be have a minimum length of 5, got </span><span style="color: #EE0000">\`</span><span style="color: #0000FF">${</span><span style="color: #001080">value</span><span style="color: #0000FF">}</span><span style="color: #EE0000">\`</span><span style="color: #A31515">`</span><span style="color: #000000">)</span>
+<span style="color: #000000">        .</span><span style="color: #001080">url</span><span style="color: #000000">.</span><span style="color: #795E26">message</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;This is no url&#039;</span><span style="color: #000000">)</span>
+<span style="color: #000000">);</span>
+<span style="color: #008000">//=&gt; ArgumentError: Expected string, to be have a minimum length of 5, got `1234`</span>
+
+<span style="color: #795E26">ow</span><span style="color: #000000">(</span>
+<span style="color: #000000">    </span><span style="color: #A31515">&#039;12345&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">    </span><span style="color: #001080">ow</span><span style="color: #000000">.</span><span style="color: #001080">string</span>
+<span style="color: #000000">        .</span><span style="color: #795E26">minLength</span><span style="color: #000000">(</span><span style="color: #098658">5</span><span style="color: #000000">).</span><span style="color: #795E26">message</span><span style="color: #000000">((</span><span style="color: #001080">value</span><span style="color: #000000">, </span><span style="color: #001080">label</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> </span><span style="color: #A31515">`Expected </span><span style="color: #0000FF">${</span><span style="color: #001080">label</span><span style="color: #0000FF">}</span><span style="color: #A31515">, to be have a minimum length of 5, got </span><span style="color: #EE0000">\`</span><span style="color: #0000FF">${</span><span style="color: #001080">value</span><span style="color: #0000FF">}</span><span style="color: #EE0000">\`</span><span style="color: #A31515">`</span><span style="color: #000000">)</span>
+<span style="color: #000000">        .</span><span style="color: #001080">url</span><span style="color: #000000">.</span><span style="color: #795E26">message</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;This is no url&#039;</span><span style="color: #000000">)</span>
+<span style="color: #000000">);</span>
+<span style="color: #008000">//=&gt; ArgumentError: This is no url</span>
+</code></pre>
+				<p>This can be useful for creating your own reusable validators which can be extracted to a separate npm package.</p>
+				<a href="#maintainers" id="maintainers" style="color: inherit; text-decoration: none;">
+					<h2>Maintainers</h2>
+				</a>
+				<ul>
+					<li><a href="https://github.com/sindresorhus">Sindre Sorhus</a></li>
+					<li><a href="https://github.com/SamVerschueren">Sam Verschueren</a></li>
+				</ul>
+				<a href="#related" id="related" style="color: inherit; text-decoration: none;">
+					<h2>Related</h2>
+				</a>
+				<ul>
+					<li><a href="https://github.com/sindresorhus/is">@sindresorhus/is</a> - Type check values</li>
+					<li><a href="https://github.com/SamVerschueren/ngx-ow">ngx-ow</a> - Angular form validation on steroids</li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="modules.html">Exports</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/arraybufferpredicate.html" class="tsd-kind-icon">Array<wbr>Buffer<wbr>Predicate</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/arraypredicate.html" class="tsd-kind-icon">Array<wbr>Predicate</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/booleanpredicate.html" class="tsd-kind-icon">Boolean<wbr>Predicate</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/dataviewpredicate.html" class="tsd-kind-icon">Data<wbr>View<wbr>Predicate</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/datepredicate.html" class="tsd-kind-icon">Date<wbr>Predicate</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/errorpredicate.html" class="tsd-kind-icon">Error<wbr>Predicate</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/mappredicate.html" class="tsd-kind-icon">Map<wbr>Predicate</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/numberpredicate.html" class="tsd-kind-icon">Number<wbr>Predicate</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/objectpredicate.html" class="tsd-kind-icon">Object<wbr>Predicate</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/setpredicate.html" class="tsd-kind-icon">Set<wbr>Predicate</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/stringpredicate.html" class="tsd-kind-icon">String<wbr>Predicate</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/typedarraypredicate.html" class="tsd-kind-icon">Typed<wbr>Array<wbr>Predicate</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/weakmappredicate.html" class="tsd-kind-icon">Weak<wbr>Map<wbr>Predicate</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/weaksetpredicate.html" class="tsd-kind-icon">Weak<wbr>Set<wbr>Predicate</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/ow.html" class="tsd-kind-icon">Ow</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/reusablevalidator.html" class="tsd-kind-icon">Reusable<wbr>Validator</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/shape.html" class="tsd-kind-icon">Shape</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#default" class="tsd-kind-icon">default</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer>
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
